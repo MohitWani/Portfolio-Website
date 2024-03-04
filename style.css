@@ -5,17 +5,17 @@ body {
   margin-top: 5px;
 }
 /* Navigation */
-ul {
+nav ul {
   background-color: #011936;
   padding-right: 5px;
 }
 
-ul li {
+nav ul li {
   display: inline-block;
   justify-content: space-between;
 }
 
-ul li a {
+nav ul li a {
   display: block;
   color: #fdfdfd;
   text-align: center;
@@ -23,7 +23,7 @@ ul li a {
   text-decoration: none;
 }
 
-ul li a:hover {
+nav ul li a:hover {
   background-color: #465362;
   color: #63ffe8;
 }
