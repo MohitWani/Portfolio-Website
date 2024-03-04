@@ -2,29 +2,20 @@ body {
   margin: 0;
   background-color: white;
   font-family: Arial, sans-serif;
+  margin-top: 5px;
 }
-
-nav {
+/* Navigation */
+ul {
   background-color: #011936;
-  padding: 10px 20px;
-  margin: auto;
-  display: flex;
+  padding-right: 5px;
 }
 
-nav ul {
-  text-align: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-nav ul li {
+ul li {
   display: inline-block;
   justify-content: space-between;
 }
 
-nav ul li a {
+ul li a {
   display: block;
   color: #fdfdfd;
   text-align: center;
@@ -32,7 +23,10 @@ nav ul li a {
   text-decoration: none;
 }
 
-nav ul li a:hover {
+ul li a:hover {
   background-color: #465362;
   color: #63ffe8;
 }
+
+/* About Section */
+
