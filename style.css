@@ -6,19 +6,24 @@ body {
 }
 /* Navigation */
 header {
-  background-color: #011936;
-  padding: 13px 45px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1000;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.7rem 10%;
+  background-color: black;
+  box-shadow: 0 1px 4px #63ffe8;
 }
 
 .user {
-  color: #F5F3F4;
+  color: #d61374;
+  font-size: 1.9rem;
+  font-weight: 800;
   text-decoration: none;
-  font-size: 1.4rem;
-  margin-right: 420px;
 }
 
 .user :hover {
@@ -27,24 +32,26 @@ header {
 
 #menu {
   cursor: pointer;
+  display: none;
+  font-size: 3rem;
 }
 
 .list-nav {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  list-style: none;
+  justify-content: center;
   display: flex;
+  align-items: center;
 }
 
 .list-nav li {
-  margin-right: 20px;
-  font-size: 1.1rem;
-  margin-right: 20px;
+  margin-left: 2.5rem;
 }
 
 
 .list-nav li a {
-  color: white;
+  color: rgb(244, 10, 10);
+  font-size: 1.1rem;
+  font-weight: 600;
   text-decoration: none;
   margin: 10px;
   letter-spacing: 0.04rem;
@@ -54,7 +61,7 @@ header {
 .list-nav li a:hover {
   color: #63ffe8;
   border-bottom: 0.13rem solid #63ffe8;
-  font-weight: 100;
+  padding: 0.5rem 0;
 }
 
 /* Home Section */
@@ -68,5 +75,112 @@ header {
 }
 
 .home .content {
-  margin: 10rem;
+  flex: 1 1 40rem;
+  padding-left: 11rem;
+  z-index: 1;
+}
+
+.home .image {
+  flex: 1 1 20rem;
+  z-index: 1;
+}
+
+.home .image img {
+  width: 70%;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+.home .image img:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.home .content h1{
+  font-size: 4rem;
+  font-weight: 700;
+  color: #002057;
+}
+
+.home .content h1 span {
+  color: #ff7b00;
+}
+
+.home .content p {
+  font-size: 2.4rem;
+  color: #000;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+
+.home .content p span {
+  font-size: 2.5rem;
+  color: rgb(148, 8, 8);
+  font-weight: 600;
+  padding: 1rem 0;
+}
+.home .btn {
+  margin-top: 1rem;
+  position: absolute;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 4em;
+  transition: 0.5s;
+  color: #fff;
+  text-decoration: none;
+  background: #2506ad;
+  box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
+  font-family: "Nunito", sans-serif;
+}
+
+.home .btn span {
+  font-weight: 700;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+}
+
+.home .btn:hover {
+  background: #1a047e;
+}
+
+/* icon section*/
+.social {
+  position: relative;
+  margin-top: 9rem;
+}
+.social .social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.social .social-icons li {
+  display: inline-block;
+  margin-bottom: 14px;
+}
+.social-icons li a {
+  font-size: 2rem;
+  display: inline-block;
+  line-height: 44px;
+  color: #00d9ff;
+  background-color: #09011b;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+  background-color: #0685da;
+}
+.social-icons a.github:hover {
+  background-color: #0e0e0e;
+}
+.social-icons a.linkedin:hover {
+  background-color: #007bb6;
 }
