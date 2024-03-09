@@ -184,3 +184,49 @@ header {
 .social-icons a.linkedin:hover {
   background-color: #b5b8ba;
 }
+
+/* ABOUT sEction*/
+
+/* Colors */
+#about {
+  background-color: #f9f9f9; /* Light gray background */
+}
+
+.about-content {
+  color: #333; /* Dark text color */
+}
+
+.btn {
+  background-color: #007bff; /* Blue button color */
+  color: #fff; /* White text color */
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Layout */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.about-content {
+  flex: 1;
+  margin-right: 50px;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
